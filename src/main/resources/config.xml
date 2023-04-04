@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	                    http://www.springframework.org/schema/beans/spring-beans.xsd
+	                    http://www.springframework.org/schema/context
+	                    http://www.springframework.org/schema/context/spring-context-5.0.2.xsd
+	                    http://www.springframework.org/schema/aop
+	                    http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id = "t1" class = "kr.hs.study.beans.TestBean1">
+        <property name="data1" value="10"/>
+    </bean>
+    <bean id = "t2" class = "kr.hs.study.beans.TestBean2" scope="prototype"></bean>
+    <bean id = "t3" class = "kr.hs.study.beans.TestBean3" lazy-init="true"/>
+    <bean id = "t4" class = "kr.hs.study.beans.TestBean4" init-method="init"/>
+    <bean id = "t5" class = "kr.hs.study.beans.TestBean4" destroy-method="destroy"/>
+
+
+
+
+
+</beans>
